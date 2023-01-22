@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body style="background-color:#f7e4f2;"></body>
+    <nav>
+        <a href="#sabor">Sabores</a> 
+        <a href="#producto">Productos</a>
+        <a href="contacto.html">Contactanos</a>
+        
+    </nav>
+ <center>
+    <header>
+        <h1>HELADERIA TROPICO HELADO</h1>        
+        
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito"></span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+        
+    </header>
+    
+
+    <img src="imagenes/1.jpg" width="300px" height="300px" alt="Logo">
+    <form name="producto">
+
+    <h2 id="sabor">Sabores Para Disfrutar</h2>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="imagenes/banano.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Banano</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/blueberry.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Blueberry</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/fresa.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Fresa</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/kiwi.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Kiwi</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/maracuya.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Maracuya</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/mora.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mora</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/oreo.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Oreo</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/sandia.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Sandia</h2>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/mango.jpg" height="220px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Mango</h2>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+    <hr class="divider" />
+    <h1 id="producto">Productos Disponibles</h1>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="imagenes/agua.jpg" height="224px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Paletas De Agua</h2>
+                <p class="price">$2000</p>
+                <button class "btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/copa.jpg" height="224px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Helado en Copa</h2>
+                <p class="price">$4500</p>
+                <button class "btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/galleta.jpg" height="224px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Helado en Galleta</h2>
+                <p class="price">$3500</p>
+                <button class "btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/malteada.jpg" height="224px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Malteadas</h2>
+                <p class="price">$5000</p>
+                <button class "btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/jugo.jpg" height="224px" alt="producto">
+            </figure>
+            <div class="info-producto">
+                <h2>Jugos Naturales</h2>
+                <p class="price">$3000</p>
+                <button class "btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        
+
+    </div>
+    <hr class="divider" />
+
+    <div class="titulo-nah">
+        <form name="formulario1"  >
+            ¿Que desea ordenar?:<select class="r2" name="p1" id="pp1">
+                <option value="0">Nada</option>
+                <option value="2000">Paleta de Agua</option>
+                <option value="4500">Helado en Copa</option>
+                <option value="3500">Helado en Galleta</option>
+                <option value="5000">Malteadas</option>
+                <option value="3000">Jugos Naturales</option>
+            
+            </select>
+            CANTIDAD: <input type="number" name="c1"/>
+            
+               Sabores: <select name="p2" id="pp2">
+                <option value="#">Ninguno</option>
+                <option value="#">Banano</option>
+                <option value="#">Blueberry</option>
+                <option value="#">Fresa</option>
+                <option value="#">Maracuya</option>
+                <option value="#">Mora</option>
+                <option value="#">Kiwi</option>
+                <option value="#">Oreo</option>
+    
+            </select>
+            <br><br>
+            <form name="formulario2"  >
+    ¿Que desea ordenar?:<select class="r2" name="p2" id="pp1">
+        <option value="0">Nada</option>
+        <option value="2000">Paleta de Agua</option>
+        <option value="4500">Helado en Copa</option>
+        <option value="3500">Helado en Galleta</option>
+        <option value="5000">Malteadas</option>
+        <option value="3000">Jugos Naturales</option>
+    
+    </select>
+    CANTIDAD: <input type="number" name="c1"/>
+    
+       Sabores: <select name="p2" id="pp2">
+        <option value="#">Ninguno</option>
+        <option value="#">Banano</option>
+        <option value="#">Blueberry</option>
+        <option value="#">Fresa</option>
+        <option value="#">Maracuya</option>
+        <option value="#">Mora</option>
+        <option value="#">Kiwi</option>
+        <option value="#">Oreo</option>
+
+    </select>
+    <br><br>
+                <form name="formulario3"  >
+                    ¿Que desea ordenar?:<select class="r2" name="p3" id="pp1">
+                        <option value="0">Nada</option>
+                        <option value="2000">Paleta de Agua</option>
+                        <option value="4500">Helado en Copa</option>
+                        <option value="3500">Helado en Galleta</option>
+                        <option value="5000">Malteadas</option>
+                        <option value="3000">Jugos Naturales</option>
+                    
+                    </select>
+                    CANTIDAD: <input type="number" name="c1"/>
+                    
+                       Sabores: <select name="p2" id="pp2">
+                        <option value="#">Ninguno</option>
+                        <option value="#">Banano</option>
+                        <option value="#">Blueberry</option>
+                        <option value="#">Fresa</option>
+                        <option value="#">Maracuya</option>
+                        <option value="#">Mora</option>
+                        <option value="#">Kiwi</option>
+                        <option value="#">Oreo</option>
+            
+                    </select>
+                    <br><br>
+                    <form name="formulario4"  >
+            ¿Que desea ordenar?:<select class="r2" name="p4" id="pp1">
+                <option value="0">Nada</option>
+                <option value="2000">Paleta de Agua</option>
+                <option value="4500">Helado en Copa</option>
+                <option value="3500">Helado en Galleta</option>
+                <option value="5000">Malteadas</option>
+                <option value="3000">Jugos Naturales</option>
+            
+            </select>
+            CANTIDAD: <input type="number" name="c1"/>
+            
+               Sabores: <select name="p2" id="pp2">
+                <option value="#">Ninguno</option>
+                <option value="#">Banano</option>
+                <option value="#">Blueberry</option>
+                <option value="#">Fresa</option>
+                <option value="#">Maracuya</option>
+                <option value="#">Mora</option>
+                <option value="#">Kiwi</option>
+                <option value="#">Oreo</option>
+    
+            </select>
+            <br><br>
+
+            <form name="formulario5"  >
+                ¿Que desea ordenar?:<select class="r2" name="p5" id="pp1">
+                    <option value="0">Nada</option>
+                    <option value="2000">Paleta de Agua</option>
+                    <option value="4500">Helado en Copa</option>
+                    <option value="3500">Helado en Galleta</option>
+                    <option value="5000">Malteadas</option>
+                    <option value="3000">Jugos Naturales</option>
+                
+                </select>
+                CANTIDAD: <input type="number" name="c1"/>
+                
+                   Sabores: <select name="p2" id="pp2">
+                    <option value="#">Ninguno</option>
+                    <option value="#">Banano</option>
+                    <option value="#">Blueberry</option>
+                    <option value="#">Fresa</option>
+                    <option value="#">Maracuya</option>
+                    <option value="#">Mora</option>
+                    <option value="#">Kiwi</option>
+                    <option value="#">Oreo</option>
+        
+                </select>
+                <br><br>
+
+                <form name="formulario"  >
+
+                
+            
+            <br>
+            <hr>
+            <input type="button" value="comprar" onclick="compra()"/>
+            <h1> El total a pagar por sus helados Trópicos es de : <span id="totala"></span> </h1>
+        </form>
+    </div>
+
+
+ </center>
+ <script>
+    function compra() {
+        valor1 = document.formulario1.p1.value;
+        valor2 = document.formulario2.p2.value;
+        valor3 = document.formulario3.p3.value;
+        valor4 = document.formulario4.p4.value;
+        valor5 = document.formulario5.p5.value;
+        cant1= document.formulario1.c1.value;
+        cant2= document.formulario2.c2.value;
+        cant3= document.formulario3.c3.value;
+        cant4= document.formulario4.c4.value;
+        cant5= document.formulario5.c5.value;
+        document.getElementById("totala").innerHTML =  (+parseInt((valor1*cantidad1)+(valor2*cantidad2)+(valor3*cantidad3)+(valor4*cantidad4)+(valor5*cantidad5)))
+    }
+ </script>
+</body>
+</html>
